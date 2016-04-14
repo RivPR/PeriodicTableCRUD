@@ -16,7 +16,19 @@ span{
 	background: darkgrey;
 }
 
-
+#map{
+	width: 90%;
+	margin: 0 auto;
+}
+#elementtable{
+	background: grey;
+	position: fixed; 
+ 	top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 20px 25px 20px;
+    
+}
 
 #navbar {
     list-style-type: none;
@@ -26,8 +38,7 @@ span{
     height: 14%;
     overflow: auto; 
     background-color: transparent;
-    position: fixed; 
-    
+    position: fixed;  
 }
 li a {
     display: block;

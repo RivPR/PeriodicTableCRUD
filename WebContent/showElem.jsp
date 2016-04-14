@@ -8,10 +8,19 @@
 <title>The element you chose!</title>
 </head>
 <body>
-<p>${element.anumber}</p>
-<p>${element.name}</p>
-<p>${element.symbol}</p>
-<p>${element.year}</p>
+<ul id="navbar"> 
+  <li><a href="index.html">Home</a></li>
+  <li><a href="history.jsp">History</a></li>
+  <li><a href="http://www.armoreira.com/">Back to Main</a></li>
+</ul>
+<h2>You chose the element:</h2>
+<div id="elementtable">
+<h1>${element.name}</h1>
+<p>Element symbol: ${element.symbol}</p>
+<p>Atomic number:  ${element.anumber}</p>
 
+<p>Date of discovery: ${element.year}</p>
+<p>Who discovered it: ${element.discoverer} </p>
+</div>
 </body>
 </html>
