@@ -20,7 +20,6 @@ public class ElementController {
 		mv.setViewName("showElem.jsp");
 		mv.addObject("element", elementDao.getElementByOrder(anumber));
 		return mv;
-		
 	}
 	@RequestMapping(path= "GetElement.do", params="esymbol")
 	public ModelAndView getBySymbol(@RequestParam("esymbolindex") String symbol){
@@ -29,8 +28,17 @@ public class ElementController {
 		mv.addObject("element", elementDao.getElementbySymbol(symbol));
 		System.out.println(mv+" ");
 		return mv;
-		
 	}
+	
+	@RequestMapping(path= "GetElement.do", params="ename")
+	public ModelAndView getByName(@RequestParam("enameIndex") String name){
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("showElem.jsp");
+		mv.addObject("element", elementDao.getElementByName(name));
+		System.out.println(mv+" ");
+		return mv;
+	}
+	
 
 	
 
