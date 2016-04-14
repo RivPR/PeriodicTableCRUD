@@ -1,29 +1,48 @@
 @CHARSET "UTF-8";
+body{
+	text-align: center;
+	background-image: url(http://www.visualnews.com/wp-content/uploads/2013/02/elements-photography-periodic-table-1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+h2{
+	text-align:center;
+}
+h2 span{
+	background: darkgrey;
+	background-size: contain;
+}
+span{
+	background: darkgrey;
+}
+
+
+
 #navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 15%;
-    background-color: #f1f1f1;
-    height: 11%;
-    position: fixed; 
+    height: 14%;
     overflow: auto; 
+    background-color: transparent;
+    position: fixed; 
+    
 }
-body{
-	text-align: center;
-}
-
 li a {
     display: block;
     color: #000;
     padding: 8px 0 8px 16px;
     text-decoration: none;
 }
-
-
 #navbar li a:hover {
     background-color: #555;
     color: white;
+}
+#navbar li a{
+	color: white;
+	font-weight: bold;
+	font-size: 125%;
 }
 .active {
     background-color: #4CAF50;
