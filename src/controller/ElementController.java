@@ -13,7 +13,7 @@ public class ElementController {
 	@Autowired
 	private ElementDAO elementDao;
 					//Get Atomic number
-	@RequestMapping("GetElement.do")
+	@RequestMapping(path= "GetElement.do", params="anumber")
 	public ModelAndView getANumber(@RequestParam("anumberIndex") int anumber){
 	
 		ModelAndView mv = new ModelAndView();
@@ -22,5 +22,17 @@ public class ElementController {
 		return mv;
 		
 	}
+	@RequestMapping(path= "GetElement.do", params="esymbol")
+	public ModelAndView getBySymbol(@RequestParam("esymbolindex") String symbol){
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("showElem.jsp");
+		mv.addObject("element", elementDao.getElementbySymbol(symbol));
+		System.out.println(mv+" ");
+		return mv;
+		
+	}
+
+	
+
 	
 }

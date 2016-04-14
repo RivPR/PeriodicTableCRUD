@@ -48,7 +48,8 @@ public class ElementFileDAO implements ElementDAO {
 				String year = tokens[3].trim();
 				String discoverer = tokens[4].trim();
 				String history = tokens[5].trim();
-				System.out.println(anumber + " " + symbol + " " + name + " " + year + " " + discoverer + "\n==================="+history + "============================================");
+				//Test to verify every element was added correctly
+				//System.out.println(anumber + " " + symbol + " " + name + " " + year + " " + discoverer + "\n==================="+history + "============================================");
 
 				elements.add(new Element(anumber, symbol, name, year, discoverer, history));
 			}
