@@ -39,6 +39,17 @@ public class ElementController {
 		return mv;
 	}
 	
+	@RequestMapping(path= "GetAll.do")
+	public ModelAndView getall(){
+		ModelAndView mv = new ModelAndView();		
+		mv.setViewName("all.jsp");
+			
+		mv.addObject("elements", elementDao.getAllElements());
+//		System.out.println(mv+" ");
+		return mv;
+//	
+		}
+	
 
 	
 

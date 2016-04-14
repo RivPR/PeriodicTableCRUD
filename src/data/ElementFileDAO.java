@@ -15,25 +15,14 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 public class ElementFileDAO implements ElementDAO {
 	private static final String FILE_NAME="/WEB-INF/elements.txt";
 	private List<Element> elements = new ArrayList<>();
-	/*
-	 * Use Autowired to have Spring inject an instance
-	 * of an ApplicationContext into this object after
-	 * creation.  We will use the ApplicationContext to
-	 * retrieve an InputStream so we can read from a 
-	 * file.
-	 */
+
 	@Autowired 
 	private ApplicationContext ac;
 
-	/*
-	 * The @PostConstruct method is called by Spring after 
-	 * object creation and dependency injection
-	 */
+
 	@PostConstruct
 	@ModelAttribute("element")
 	public void init() {
-		// Retrieve an input stream from the application context
-		// rather than directly from the file system
 		try (
 				InputStream is = ac.getResource(FILE_NAME).getInputStream();
 				BufferedReader buf = new BufferedReader(new InputStreamReader(is));
@@ -93,7 +82,18 @@ public class ElementFileDAO implements ElementDAO {
 		return s;
 	}
 	@Override
-	public void addState(Element element) {
+	public ArrayList<Element> getAllElements() {
+		ArrayList <Element> list = new ArrayList();  
+		
+		for (Element element : elements) {
+		list.add(element);
+		}
+		return list;
+	}
+	
+	
+	@Override
+	public void addElement(Element element) {
 		elements.add(element);
 	}
 }
