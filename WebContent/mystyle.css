@@ -1,7 +1,8 @@
 @CHARSET "UTF-8";
 body{
 	text-align: center;
-	background-image: url(http://www.visualnews.com/wp-content/uploads/2013/02/elements-photography-periodic-table-1.jpg);
+	background-color: darkgrey;
+	background-image: url(https://s-media-cache-ak0.pinimg.com/736x/52/1c/c9/521cc908403dce3bcfefde4c22468a84.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -35,7 +36,7 @@ span{
     margin: 0;
     padding: 0;
     width: 15%;
-    height: 14%;
+    height: 25%;
     overflow: auto; 
     background-color: transparent;
     position: fixed;  
