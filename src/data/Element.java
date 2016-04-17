@@ -1,13 +1,21 @@
 package data;
 
 public class Element {
-	private int anumber;
-	private String symbol;
-	private String name;
+
+	private int anumber=1;
+
+	private String symbol="H";
+
+	private String name="Hydrogen";
+
 	private String year;
+
 	private String discoverer;
 	private String history;
 	
+	public Element(){
+		
+	}
 	public Element(int anumber, String symbol, String name, String year, String discoverer, String history) {
 		this.anumber = anumber;
 		this.symbol = symbol;

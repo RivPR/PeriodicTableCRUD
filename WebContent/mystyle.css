@@ -2,25 +2,33 @@
 body{
 	text-align: center;
 	background-color: darkgrey;
-	background-image: url(https://s-media-cache-ak0.pinimg.com/736x/52/1c/c9/521cc908403dce3bcfefde4c22468a84.jpg);
+	background-image: url(http://boyns.net/wp-content/uploads/2016/01/abstract-gradient-background-vector.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
+}
+input.wide {
+		width: 250px;
+height: 100px;
+
 }
 h2{
 	text-align:center;
 }
 h2 span{
-	background: darkgrey;
+	background: ;
 	background-size: contain;
 }
 span{
-	background: darkgrey;
+	background: ;
 }
 
-#map{
-	width: 90%;
+#map map{
+	width: 50%;
+	height: 50%;
 	margin: 0 auto;
 }
+
 #elementtable{
 	background: grey;
 	position: fixed; 
@@ -29,6 +37,63 @@ span{
     transform: translate(-50%, -50%);
     padding: 0 20px 25px 20px;
     
+}
+#elementtableall{
+	background: grey;
+	position: relative; 
+	width: 20%;
+ 	top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 0 20px 25px 20px;
+    
+}
+form{
+
+	display: inline-block;
+}
+
+#delete {
+	background: lightgrey;
+	color: red;
+	font-weight: bold;
+	float: right;
+	display: inline-block;
+	vertical-align: top;
+	
+	position:absolute; 
+	top:4px; 
+	right:4px;
+	
+}
+
+#edit {
+	background: lightgrey;
+	color: green;
+	font-weight: bold;
+	float: left;
+	display: inline-block;
+	vertical-align: top;
+
+	position: absolute;
+    top: 4px;
+    left: 4px;
+	
+}
+h1{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#historybox{
+	height:200px;
+	
+}
+
+.warning{
+	color: red;
+	text-size: bigger;
+	font-weight: bold;	
 }
 
 #navbar {

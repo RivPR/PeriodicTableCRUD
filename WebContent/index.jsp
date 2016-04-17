@@ -8,29 +8,28 @@
 <body>
 
 	<ul id="navbar">
-		<li><a href="index.html">Home</a></li>
+		<li><a href="index.jsp">Home</a></li>
 		<li><a href="all.jsp">List all</a></li>
 		<li><a href="history.jsp">History</a></li>
-		<li><a href="edit.jsp">Edit Element</a></li>
+		<li><a href="edit.jsp">Add/Edit Element</a></li>
 		<li><a href="http://www.armoreira.com/">Back to Main</a></li>
 	</ul>
 
 <h2><span>Please choose any element to see its properties!</span></h2>
 
 <form action="GetElement.do" method="GET">
-	<span>Atomic#</span><input type="text" name="anumberIndex" value="">
-	<input type="submit" name="anumber" value="by A. Number"/>
-</form>
-
+	<span>Atomic#</span><input type="text" name="anumberIndex" value="1">
+	<input type="submit" name="anumber" value="by A.Number"/>
+</form><br/>
 <form action="GetElement.do" method="GET">
-	<span>Symbol</span><input type="text" name="esymbolindex" value="">
+	<span>Symbol</span><input type="text" name="esymbolindex" value="H">
 	<input type="submit" name="esymbol" value="by Symbol"/>
-</form>
+</form><br/>
 
 <form action="GetElement.do" method="POST">
-	<span>Name</span><input type="text" name="enameIndex" value="">
+	<span>Name</span><input type="text" name="enameIndex" value="Hydrogen">
 	<input type="submit" name="ename" value="by Name"/>
-</form>
+</form><br/>
 
 <div id="map">
 <img src="http://sciencenotes.org/wp-content/uploads/2015/09/MutedPeriodicTable.png" alt="" usemap="#Map" />

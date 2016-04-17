@@ -96,5 +96,15 @@ public class ElementFileDAO implements ElementDAO {
 	public void addElement(Element element) {
 		elements.add(element);
 	}
+	
+	@Override
+	public void editElement(int index, Element element){
+		elements.set(index, element);
+	}
+	@Override
+	public void deleteElement(int index){
+		elements.remove(index);
+	}
+	
 }
 

@@ -10,22 +10,37 @@
 </head>
 <body>
 <ul id="navbar"> 
-		<li><a href="index.html">Home</a></li>
+		<li><a href="index.jsp">Home</a></li>
 		<li><a href="all.jsp">List all</a></li>
 		<li><a href="history.jsp">History</a></li>
-		<li><a href="edit.jsp">Edit Element</a></li>
+		<li><a href="edit.jsp">Add/Edit Element</a></li>
 		<li><a href="http://www.armoreira.com/">Back to Main</a></li>
 </ul>
-<div id="elementtable">
-<c:forEach var="element" items="${elements}" >
-<h1>${element.name}</h1>
-<p>Element symbol: ${element.symbol}</p>
-<p>Atomic number:  ${element.anumber}</p>
 
-<p>Date of discovery: ${element.year}</p>
-<p>Who discovered it: ${element.discoverer} </p>
+
+<c:forEach var="element" items="${elements}" >
+	
+		<div id="elementtableall">
+		<form action="EditElement.do" method="POST">
+		<input type="hidden" name="anumber" value="${element.anumber}">
+		<button id="edit" name="editButton">+</button>
+		</form><h1>${element.name}</h1>
+		<form action="DeleteElement.do" method="POST">
+		<input type="hidden" name="anumber" value="${element.anumber}">
+		<button id="delete" name="deleteButton">x</button>
+		</form>
+		
+		<p>Element symbol: ${element.symbol}</p>
+		<p>Atomic number:  ${element.anumber}</p>
+		
+		<p>Date of discovery: ${element.year}</p>
+		<p>Who discovered it: ${element.discoverer} </p>
+		
+		</div>
+		<br/>
+
 </c:forEach>
-</div>
+
 
 <form action="GetAll.do"><button>Populate list!</button></form>
 </body>

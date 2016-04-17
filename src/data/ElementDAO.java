@@ -8,4 +8,6 @@ public interface ElementDAO {
 	public Element getElementByOrder(int current);
 	public ArrayList<Element> getAllElements();
 	public void addElement(Element element);
+	public void editElement(int index, Element element);
+	public void deleteElement(int index);
 }
