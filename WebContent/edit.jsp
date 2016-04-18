@@ -11,7 +11,6 @@
 <ul id="navbar"> 
 		<li><a href="index.jsp">Home</a></li>
 		<li><a href="all.jsp">List all</a></li>
-		<li><a href="history.jsp">History</a></li>
 		<li><a href="edit.jsp">Add/Edit Element</a></li>
 		<li><a href="http://www.armoreira.com/">Back to Main</a></li>
 </ul>

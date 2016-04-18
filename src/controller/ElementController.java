@@ -57,7 +57,8 @@ public class ElementController {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("showElem.jsp");
 		mv.addObject("element", elementDao.getElementbySymbol(symbol));
-		System.out.println(mv+" ");
+		mv.addObject("viewed", elementDao.getElementbySymbol(symbol).getAnumber());
+
 		return mv;
 	}
 	
@@ -69,7 +70,7 @@ public class ElementController {
 		}
 		mv.setViewName("showElem.jsp");
 		mv.addObject("element", elementDao.getElementByName(name));
-		System.out.println(mv+" ");
+		mv.addObject("viewed", elementDao.getElementByName(name).getAnumber());
 		return mv;
 	}
 	@RequestMapping(path= "EditElement.do", params="editButton")
@@ -77,6 +78,7 @@ public class ElementController {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("edit.jsp");
 		mv.addObject("element", elementDao.getElementByOrder(anumber));
+		mv.addObject("viewed", elementDao.getElementByOrder(anumber).getAnumber());
 		return mv;
 	}
 	
@@ -94,6 +96,7 @@ public class ElementController {
 		ModelAndView mv = new ModelAndView();		
 		elementDao.addElement(element);
 		mv.setViewName("index.jsp");
+		
 		return mv;
 	}
 	@RequestMapping(path= "Editelement.do", params="edit")

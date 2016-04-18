@@ -13,7 +13,6 @@
 <ul id="navbar"> 
 		<li><a href="index.jsp">Home</a></li>
 		<li><a href="all.jsp">List all</a></li>
-		<li><a href="history.jsp">History</a></li>
 		<li><a href="edit.jsp">Add/Edit Element</a></li>
 		<li><a href="http://www.armoreira.com/">Back to Main</a></li>
 </ul>
@@ -38,11 +37,13 @@
 		<p>Who discovered it: ${element.discoverer} </p>
 		
 		</div>
-		<br/>
+		
 
 </c:forEach>
 
-
+<br/>
+<div id=listbutton>
 <form action="GetAll.do"><button>Populate list!</button></form>
+</div>
 </body>
 </html>
