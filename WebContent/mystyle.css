@@ -23,30 +23,47 @@ span{
 	background: ;
 }
 
-#map map{
-	width: 50%;
-	height: 50%;
+img{
+
+
 	margin: 0 auto;
+	
+    max-width: 100%;
+
 }
 
+
 #elementtable{
-	background: grey;
+	background: transparent;
 	position: fixed; 
  	top: 25%;
     left: 50%;
+    width: 20%;
     transform: translate(-50%, -50%);
     padding: 0 20px 25px 20px;
+	border-radius: 42px 146px 62px 167px;
+		-moz-border-radius: 42px 146px 62px 167px;
+		-webkit-border-radius: 42px 146px 62px 167px;
+	border: 10px solid #000000;
+	font-family: 'Fjalla One', sans-serif;
+
     
 }
 #elementtableall{
 	background: grey;
+	background: transparent;
 	position: relative; 
 	width: 20%;
  	top: 25%;
     left: 50%;
     transform: translate(-50%, 0%);
     padding: 0 20px 25px 20px;
-    
+	border-radius: 42px 146px 62px 167px;
+		-moz-border-radius: 42px 146px 62px 167px;
+		-webkit-border-radius: 42px 146px 62px 167px;
+	border: 10px solid #000000;
+	font-family: 'Fjalla One', sans-serif;
+        
 }
 form{
 
@@ -57,13 +74,13 @@ form{
 	background: lightgrey;
 	color: red;
 	font-weight: bold;
-	float: right;
+	float: left;
 	display: inline-block;
 	vertical-align: top;
-	
+	border-radius: 200px;
 	position:absolute; 
-	top:4px; 
-	right:4px;
+	top:35px; 
+	left:4px;
 	
 }
 
@@ -74,9 +91,9 @@ form{
 	float: left;
 	display: inline-block;
 	vertical-align: top;
-
+	border-radius: 200px;
 	position: absolute;
-    top: 4px;
+    top: 14px;
     left: 4px;
 	
 }
@@ -125,3 +142,4 @@ li a {
     background-color: #4CAF50;
     color: white;
 }
+

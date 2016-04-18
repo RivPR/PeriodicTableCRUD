@@ -3,6 +3,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
+<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>The element you chose!</title>
@@ -16,6 +18,10 @@
 		<li><a href="http://www.armoreira.com/">Back to Main</a></li>
 </ul>
 <h2>You chose the element:</h2>
+<form action="navigate.do" method="GET">
+	<div class="buttonprev"><button name="previous">Previous</button></div>
+	<div class="buttonnext"><button name="next">Next</button></div>
+</form>
 <div id="elementtable">
 <h1>${element.name}</h1>
 <p>Element symbol: ${element.symbol}</p>

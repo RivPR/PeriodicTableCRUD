@@ -16,6 +16,7 @@
 	</ul>
 
 <h2><span>Please choose any element to see its properties!</span></h2>
+	<h3>For best results display at 90% view</h3>
 
 <form action="GetElement.do" method="GET">
 	<span>Atomic#</span><input type="text" name="anumberIndex" value="1">
@@ -31,7 +32,9 @@
 	<input type="submit" name="ename" value="by Name"/>
 </form><br/>
 
-<div id="map">
+
+
+
 <img src="http://sciencenotes.org/wp-content/uploads/2015/09/MutedPeriodicTable.png" alt="" usemap="#Map" />
 <map name="Map">
     <area alt="" title="" href="/PeriodicTable/GetElement.do?anumberIndex=1&anumber=by+A.+Number" shape="rect" coords="142,58,228,150" />
@@ -152,13 +155,8 @@
     <area alt="" title="" href="/PeriodicTable/GetElement.do?anumberIndex=101&anumber=by+A.+Number" shape="rect" coords="1552,899,1466,811" />
     <area alt="" title="" href="/PeriodicTable/GetElement.do?anumberIndex=102&anumber=by+A.+Number" shape="rect" coords="1642,899,1557,811" />
     <area alt="" title="" href="/PeriodicTable/GetElement.do?anumberIndex=103&anumber=by+A.+Number" shape="rect" coords="1734,900,1641,810" />
-    
-    
 
 </map>
-</div>
-
-
 
 </body>
 </html>
